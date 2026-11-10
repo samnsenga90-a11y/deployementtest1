@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS order_items (
 
 INSERT INTO products (name, description, price, image, stock, featured, active)
 SELECT * FROM (
-  SELECT 'Casque audio sans fil' AS name, 'Un casque confortable pour écouter votre musique et travailler au quotidien.' AS description, 35.00 AS price, 'https://images.unsplash.com/photo-150 headphones?auto=format&fit=crop&w=900&q=80' AS image, 12 AS stock, 1 AS featured, 1 AS active
+  SELECT 'Casque audio sans fil' AS name, 'Un casque confortable pour écouter votre musique et travailler au quotidien.' AS description, 35.00 AS price, 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80' AS image, 12 AS stock, 1 AS featured, 1 AS active
   UNION ALL SELECT 'Montre connectée', 'Une montre pratique pour suivre vos activités et recevoir vos notifications.', 49.00, 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=80', 8, 1, 1
   UNION ALL SELECT 'Sac à dos urbain', 'Un sac polyvalent avec plusieurs compartiments pour vos déplacements.', 29.00, 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=80', 15, 1, 1
   UNION ALL SELECT 'Lampe de bureau', 'Un éclairage sobre pour aménager un espace de travail agréable.', 22.00, 'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80', 10, 0, 1
